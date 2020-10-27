@@ -4,11 +4,13 @@ from py2neo import Relationship
 import pandas as pd
 import time
 
+
 def gen_subg(rels):
     subg = rels[0]
     for rel in rels:
         subg = subg | rel
     return subg
+
 
 def create_nodes(nodes):
     nodes_dict = {}
@@ -27,6 +29,7 @@ def create_rels(rels):
 def make_rel(node_dict, rel_dict, row):
     head, rel, tail = row[0], row[1], row[2]
     return rel_dict[rel](node_dict[head], node_dict[tail])
+
 
 def create_graph():
     print("数据读取中.....")
@@ -58,4 +61,3 @@ def create_graph():
             graph.create(subg)
             relations = []
             print(i, "rows are written, time spent, total:", time.time() - start, "loop:", time.time() - lstart)
-

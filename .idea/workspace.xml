@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="18a954b3-b6f8-4736-a891-64f02ba51c26" name="Default Changelist" comment="" />
+    <list default="true" id="18a954b3-b6f8-4736-a891-64f02ba51c26" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/关系抽取.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/关系抽取.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Create_Graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Create_Graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QA.py" beforeDir="false" afterPath="$PROJECT_DIR$/QA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,15 +44,19 @@
       </list>
     </option>
   </component>
-  <component name="JupyterTrust" id="7db18525-cd6f-4c0d-8976-28eea90426c3" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="defdef59-062f-4a92-b8e1-fbae9f2edad5" />
   <component name="ProjectId" id="1ifh2b6ptFOVGAoMrHQqUugUEqd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -72,6 +106,28 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ChineseNER-master/data_processing/Format_conversion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="关系抽取" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -154,6 +210,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -176,13 +233,30 @@
       <workItem from="1602771818223" duration="19559000" />
       <workItem from="1602819193656" duration="1768000" />
       <workItem from="1603761715616" duration="669000" />
+      <workItem from="1603765763863" duration="1562000" />
+      <workItem from="1603797688821" duration="1317000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="655" y="304" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603798498813">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="304" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1040/896.-600.1024.600/0.0.1920.1040/-1920.-278.1920.1080@0.0.1920.1040" timestamp="1603798498813" />
     <state x="549" y="166" key="FileChooserDialogImpl" timestamp="1602816582441">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -219,10 +293,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="742" height="228" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602771388267" />
-    <state x="270" y="54" key="SettingsEditor" timestamp="1602621462044">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="338" y="68" key="SettingsEditor" timestamp="1603766098643">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602621462044" />
+    <state x="338" y="68" key="SettingsEditor/1920.0.1920.1040/896.-600.1024.600/0.0.1920.1040/-1920.-278.1920.1080@0.0.1920.1040" timestamp="1603766098643" />
     <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1602771817750">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -247,20 +322,5 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="781" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602768434481" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Civil_Aviation_Graph$result_output__1_.coverage" NAME="result_output (1) Coverage Results" MODIFIED="1602754033865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Civil_Aviation_Graph$1.coverage" NAME="1 Coverage Results" MODIFIED="1602762219922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$run.coverage" NAME="run Coverage Results" MODIFIED="1602622998693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Civil_Aviation_Graph$Format_conversion.coverage" NAME="Format_conversion Coverage Results" MODIFIED="1602769706208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ChineseNER-master/data_processing" />
-    <SUITE FILE_PATH="coverage/Civil_Aviation_Graph$Create_Graph.coverage" NAME="Create_Graph Coverage Results" MODIFIED="1602772107904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Civil_Aviation_Graph$run.coverage" NAME="run Coverage Results" MODIFIED="1602743011076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Civil_Aviation_Graph$data_utils__1_.coverage" NAME="data_utils (1) Coverage Results" MODIFIED="1602761030458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Civil_Aviation_Graph$data_extractor.coverage" NAME="data_extractor Coverage Results" MODIFIED="1602765970041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Civil_Aviation_Graph$data_transform.coverage" NAME="data_transform Coverage Results" MODIFIED="1602767302716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Civil_Aviation_Graph$train.coverage" NAME="train Coverage Results" MODIFIED="1602819519260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$utils.coverage" NAME="utils Coverage Results" MODIFIED="1602621816299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Civil_Aviation_Graph$main.coverage" NAME="main Coverage Results" MODIFIED="1602766069383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Civil_Aviation_Graph$data_transform__1_.coverage" NAME="data_transform (1) Coverage Results" MODIFIED="1602773852183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_processing" />
   </component>
 </project>

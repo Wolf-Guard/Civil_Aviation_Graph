@@ -1,4 +1,12 @@
+from tensorflow.keras import layers
+from tensorflow.keras import backend as K
+from tensorflow.keras.layers import Input, Embedding, Lambda
+from tensorflow.keras.layers import Concatenate, Dense
+from tensorflow.keras.layers import Conv1D, MaxPool1D, Flatten
+from tensorflow.keras.models import Model
+
 from data_utils import *
+
 
 def build_model():
     inp_sent = Input(shape=(max_len,), dtype='int32')
@@ -61,14 +69,14 @@ def build_model():
 
 train_data_dir = 'data/train_data'
 test_b_data_dir = 'data/test_data_b'
-relation_dict_dir ='data'
+relation_dict_dir = 'data'
 
 train_docs = Documents(train_data_dir)
 test_docs = Documents(test_b_data_dir)
-#提取训练集中所有的 relation
+# 提取训练集中所有的 relation
 print("==========提取关系===========")
 doc_ent_pair_ids = []
-#提取所有文档关系中的实体对
+# 提取所有文档关系中的实体对
 for doc in train_docs:
     for rel in doc.rels:
         doc_ent_pair_id = (doc.doc_id, rel.ent1.ent_id, rel.ent2.ent_id)
@@ -77,7 +85,7 @@ for doc in train_docs:
 # 从文档中抽取句子
 print("==========提取句子===========")
 sent_extractor = SentenceExtractor(sent_split_char='\n', window_size=4, dict_dir=relation_dict_dir,
-                                   rels_type_list='',filter_no_rel_candidates_sents=True)
+                                   rels_type_list='', filter_no_rel_candidates_sents=True)
 train_sents = sent_extractor(train_docs)
 test_sents = sent_extractor(test_docs)
 
@@ -90,17 +98,17 @@ ent_pair_extractor = EntityPairsExtractor(all_rel_types, max_len=max_len)
 train_entity_pairs = ent_pair_extractor(train_sents)
 test_entity_pairs = ent_pair_extractor(test_sents)
 
-#清洗实体对，消除None
+# 清洗实体对，消除None
 train_entity_pairs_clean = []
 test_entity_pairs_clean = []
-#清洗训练集
+# 清洗训练集
 for ent_pairs in train_entity_pairs:
-    if (ent_pairs != None):
+    if ent_pairs is not None:
         train_entity_pairs_clean.append(ent_pairs)
 
-#清洗测试集
+# 清洗测试集
 for ent_pairs in test_entity_pairs:
-    if (ent_pairs != None):
+    if ent_pairs is not None:
         test_entity_pairs_clean.append(ent_pairs)
 
 # 利用候选 relation 所在的句子训练字符级别的字向量
@@ -116,7 +124,7 @@ print("==========准备数据集==========")
 train_data = Dataset(train_entity_pairs_clean, doc_ent_pair_ids, word2idx=word2idx, max_len=max_len, cate2idx=ent2idx)
 test_data = Dataset(test_entity_pairs_clean, word2idx=word2idx, max_len=max_len, cate2idx=ent2idx)
 
-#模型训练
+# 模型训练
 num_ent_classes = len(ENTITIES) + 1
 ent_emb_size = 2
 emb_size = w2v_embeddings.shape[-1]
@@ -131,15 +139,6 @@ print(model.summary())
 model.fit(x=[tr_sent, tr_ent, tr_f_ent, tr_t_ent, tr_ent_dist],
           y=tr_y, batch_size=64, epochs=10)
 
-
-#模型保存
+# 模型保存
 model.save('Model/model.h5')
 print('模型保存成功！')
-
-
-
-
-
-
-
-

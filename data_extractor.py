@@ -2,13 +2,13 @@ import os
 import numpy as np
 from collections import Counter, defaultdict
 
-submit_file= 'data_submit/ner_rel/'
+submit_file = 'data_submit/ner_rel/'
 ner_rel_group = 'data_submit/three_tuple/'
 entity_file = 'data_submit/entity/'
 rel_file = 'data_submit/relationship/'
 
 
-#结果输出
+# 结果输出
 def read_relation_dict(dict_dir):
     rels_type_list = []
     fname = os.path.join(dict_dir, 'relation_dict.txt')
@@ -89,6 +89,7 @@ def parse_entity_line(raw_str):
     ent = {ent_id: text}
     return ent
 
+
 def parse_relation_line(raw_str, ents):
     ner_rel = []
     rel_id, label = raw_str.strip().split('\t')
@@ -136,7 +137,7 @@ def get_ent_text(doc_id):
     return texts
 
 
-#提取写入实体关系三元组
+# 提取写入实体关系三元组
 def get_three_tuple():
     ents = []
     for doc_id in scan_doc_ids():
@@ -155,7 +156,7 @@ def get_three_tuple():
                     f.write(ner)
                     f.write(',')
                 f.write('\n')
-        with open(filepath2,'w',encoding='utf-8') as f:
+        with open(filepath2, 'w', encoding='utf-8') as f:
             f.write('entity')
             f.write(',')
             f.write('\n')
@@ -163,4 +164,3 @@ def get_three_tuple():
                 f.write(entity)
                 f.write(',')
                 f.write('\n')
-
